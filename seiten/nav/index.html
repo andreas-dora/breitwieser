@@ -3,40 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Andreas Breitwieser</title>
+  <title>Portfolio live</title>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <div class="wrapper">
-      <div class="flexBox">
-        <a href="./dropDown/index.html" class="nav">About</a>
-        <a href="#" class="nav">Up</a>
-        <button id="id_menu-btn">Menü</button>
+  <header>  
+    <nav>
+      <div class="wrapper">
+        <div class="flexBox">
+          <a href="./seiten/menu/balkenM/" class="nav">A.</a>
+          <!-- <a href="#" class="nav">Up</a> -->
+          <button id="id_menu-btn">Menu</button>
+        </div>
       </div>
-    </div>
-  </nav>
-
-
-  <div id="navOverlay" class="overlay">
-
-    <button id="id_closeBtn" class="closeBtn">&times;</button>
-      <div class="overlay-content">
-      <a href="./curiculum/index.html">Lebenslauf</a>
-      <a href="./seiten/Dora/index.html">Interview</a>
-      <a href="./seiten/dropDown/index.html">Dropdown</a>
-      <a href="https://github.com/andreas-dora" target="_blank" rel="noopener noreferrer">Github</a>
-      <a href="#">Contact</a>
-    </div>
-  </div>
-  <main>
-    <section>
-      <h1>Arbeitskopie</h1>
-    </section>
-  </main>
-
-
+    </nav>
+  
+    <div class="pannelBox" id="id_pannel"> 
+      <div class="menuPannel" id="id-menuPannel">
+          <a class="pannelLink" href="../../../index.html">About</a>
+          <a class="pannelLink" href="../curiculum/index.html">Lebenslauf</a>
+          <a class="pannelLink" href="../seiten/Dora/index.html">Work</a>
+          <a class="pannelLink" href="./seiten/contact/index.html">Contact</a>
+        </div>
+      </div>
+    </header>
+ 
   <script type="text/javascript" src="nav.js"></script>
 </body>
 </html>

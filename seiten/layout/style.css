@@ -1,0 +1,146 @@
+*{
+  /* outline: 1px solid pink; */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+:root{
+  --c-mainblau: #034f67;
+  --c-hellgrau: #e6e1dc;
+  --c-bikini: #77212e;
+  --c-dunkel: #373434;
+  --c-chili: #9B2335;
+  --c-alarm: #f9423a;
+  --c-superblue: #4244b6;
+  --c-bronze: #a6966c;
+  --c-accent: #a6966c;
+  --c-second: #034f67;
+}
+
+
+body{
+  font-family: 'Cairo', Arial, sans-serif;
+  font-size: 100%;
+}
+
+/*##############################*/
+/*##############################*/
+/*##############################*/
+
+h1, h2, h3{
+  line-height: 1;
+}
+
+p{
+  font-size: 1.1em;
+  line-height: 1.6;
+}
+
+
+/*##############################*/
+/*##############################*/
+/*##############################*/
+
+
+
+main{
+  max-width: 1200px;
+  margin: 5vw auto;
+  /* outline: 1px solid var(--c-alarm); */
+
+}
+
+img{
+  max-width: 100%;
+}
+.flexBox{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+article{
+  min-width: 380px;
+  /* width: 100%; */
+  max-width: 700px;
+  flex: 2;
+  padding: 1em .5em;
+  /* outline: 1px solid var(--c-alarm); */
+
+}
+aside{
+  min-width: 220px;
+  flex: 1;
+  padding: 1em .5em;
+  /* outline: 1px solid var(--c-alarm); */
+}
+aside img{
+  /* border: 2px solid var(--c-alarm); */
+  margin: 0 auto;
+}
+.section__head h1{
+  font-size: clamp(2em, 8vw, 6em );
+}
+
+@media screen and (min-width: 670px) {
+  /* main{
+    width: 98%;
+  } */
+  article{
+    margin-right: 1em;
+  }
+  /* p{
+    font-size: 1.2em;
+  } */
+}
+
+@media screen and (min-width: 700px) {
+  main{
+    width: 98%;
+  }
+  article{
+    margin-right: 1em;
+  }
+  p{
+    font-size: 1.2em;
+  }
+}
+
+
+@media screen and (min-width: 800px){
+  main{
+    width: 98%;
+  }
+  article{
+    margin-right: 2em;
+  }
+  p{
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+}
+@media screen and (min-width: 920px){
+  main{
+    width: 96%;
+  }
+  article{
+    margin-right: 2em;
+  }
+  p{
+    font-size: 1.2em;
+    line-height: 1.8;
+  }
+}
+@media screen and (min-width: 1080px){
+  main{
+    width: 92%;
+    
+  }
+  article{
+    margin-right: 4em;
+  }
+  p{
+    font-size: 1.3em;
+    line-height: 1.8;
+  }
+}
