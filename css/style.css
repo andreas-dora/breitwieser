@@ -4,6 +4,11 @@ body{
   background-color: snow;
 }
 
+a{
+  text-decoration: none;
+  color: darkslategrey;
+  font-weight: bold;
+}
 /* global*/
 .container{
   width: 80%;
@@ -16,9 +21,12 @@ header{
   min-height: 70px;
 }
 
+article{
+  width: 50%;
+
+}
+
 header a{
-  color: darkslategrey;
-  text-decoration: none;
   text-transform: uppercase;
   font-size: 16px;
 
