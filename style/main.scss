@@ -1,0 +1,96 @@
+$f-barlow: 'Barlow', sans-serif;
+$f-main: Helvetica, Arial, sans-serif;
+$c-background:#f8f8ff;
+$c-myBlue: #034f67;
+
+@mixin upper {
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+*{
+  margin: 0; 
+  padding: 0; 
+  box-sizing: border-box;
+}
+/*####################################*/
+/*####################################*/
+/*####################################*/
+
+body{
+  background: $c-background;
+  font-family: $f-main; 
+  font-size: 116%;
+}
+
+main{ 
+  margin: 8vh auto;
+}
+
+section{
+  margin-bottom: 32px;
+  // background-color: silver;
+  margin-bottom: 46px;
+}
+
+.widthCon{
+  max-width: 1000px
+}
+article{
+  margin-bottom: 32px;
+}
+.flexCon{
+  display: flex;
+
+  .flexCon__aside{
+    min-width: 300px;
+    margin-right: 32px;
+    text-align: right;
+  }
+}
+
+/*####################################*/
+/*####################################*/
+/*####################################*/
+
+h1, h2, h3 {
+  font-family: $f-barlow;
+  color: $c-myBlue
+}
+
+h2{ 
+  font-size: 4vw;
+  margin-bottom: 32px;
+}
+
+h4{
+  margin-bottom: 12px;
+}
+
+ul{
+  list-style: none;
+}
+
+p{
+  line-height: 1.2rem;
+  margin-bottom: 12px;
+}
+
+li{
+  line-height: 1.8rem;
+  padding-left: 16px;
+}
+a{
+  text-decoration: none;
+  color: $c-myBlue;
+  background-image: linear-gradient($myCol_1, $myCol_1);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 0% 2px;
+  transition: background-size 500ms ease-in-out;
+}
+a:hover{
+  cursor: pointer;
+  background-size: 100% 2px;
+}
