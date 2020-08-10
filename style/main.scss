@@ -46,9 +46,13 @@ article{
   display: flex;
 
   .flexCon__aside{
-    min-width: 300px;
-    margin-right: 32px;
+    min-width: 280px;
+    margin-right: 16px;
     text-align: left;
+  }
+  .flexCon__content{
+    min-width: 320px;
+
   }
 }
 
@@ -109,4 +113,54 @@ hr{
   border-bottom: 3px solid $c-myBlue;
   margin-top: 20px;
   margin-bottom: 64px;
+}
+
+.green{
+  
+  color: #04501c;
+  @include upper();
+  font-weight: 900;
+  margin-bottom: 18px;
+
+}
+
+.subline{
+  margin-bottom: 24px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/*####################################*/
+/*############### MEDIA ##############*/
+/*####################################*/
+
+@media only screen and (max-width: 640px){
+
+  main{
+    width: 100%;
+  }
+  .flexCon {
+    flex-direction: column;
+    .flexCon__aside{
+      margin-bottom: 8px;
+
+    }
+    .flexCon__content{
+      margin-bottom: 12px;
+    }
+  }
+  h4{
+    font-size: 1.3rem; 
+    margin-bottom: 6px;}
+}
+
+
+@media print{
+  body{
+    background-color: #fff;
+    color: #000;
+  }
 }

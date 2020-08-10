@@ -39,9 +39,13 @@ article {
 }
 
 .flexCon .flexCon__aside {
-  min-width: 300px;
-  margin-right: 32px;
+  min-width: 280px;
+  margin-right: 16px;
   text-align: left;
+}
+
+.flexCon .flexCon__content {
+  min-width: 320px;
 }
 
 /*####################################*/
@@ -99,5 +103,55 @@ hr {
   border-bottom: 3px solid #034f67;
   margin-top: 20px;
   margin-bottom: 64px;
+}
+
+.green {
+  color: #04501c;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  font-weight: 900;
+  margin-bottom: 18px;
+}
+
+.subline {
+  margin-bottom: 24px;
+}
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+/*####################################*/
+/*############### MEDIA ##############*/
+/*####################################*/
+@media only screen and (max-width: 640px) {
+  main {
+    width: 100%;
+  }
+  .flexCon {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .flexCon .flexCon__aside {
+    margin-bottom: 8px;
+  }
+  .flexCon .flexCon__content {
+    margin-bottom: 12px;
+  }
+  h4 {
+    font-size: 1.3rem;
+    margin-bottom: 6px;
+  }
+}
+
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
 }
 /*# sourceMappingURL=main.css.map */
