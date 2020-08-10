@@ -1,11 +1,12 @@
 $f-barlow: 'Barlow', sans-serif;
+$f-roboto: 'Roboto', sans-serif;
 $f-main: Helvetica, Arial, sans-serif;
 $c-background:#f8f8ff;
 $c-myBlue: #034f67;
 
 @mixin upper {
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
   letter-spacing: 0.2em;
 }
 
@@ -21,11 +22,12 @@ $c-myBlue: #034f67;
 body{
   background: $c-background;
   font-family: $f-main; 
-  font-size: 116%;
+  font-size: 110%;
 }
 
 main{ 
   margin: 8vh auto;
+  padding: 16px;
 }
 
 section{
@@ -46,7 +48,7 @@ article{
   .flexCon__aside{
     min-width: 300px;
     margin-right: 32px;
-    text-align: right;
+    text-align: left;
   }
 }
 
@@ -55,31 +57,38 @@ article{
 /*####################################*/
 
 h1, h2, h3 {
-  font-family: $f-barlow;
-  color: $c-myBlue
+ font-family: $f-roboto;
+  color: $c-myBlue;
+  // font-weight: 900;
+}
+h1{ 
+  margin-bottom: 48px;
+  font-size: 6vw;
+  font-weight: 900;
 }
 
-h2{ 
-  font-size: 4vw;
+
+h3{ 
+  @include upper();
   margin-bottom: 32px;
 }
 
-h4{
+h4 { 
   margin-bottom: 12px;
 }
 
-ul{
-  list-style: none;
-}
+
 
 p{
-  line-height: 1.2rem;
-  margin-bottom: 12px;
+  line-height: 1.8rem;
+  // margin-bottom: 8px;
 }
-
+// ul{
+//   list-style: none;
+// }
 li{
   line-height: 1.8rem;
-  padding-left: 16px;
+  margin-left:24px;
 }
 a{
   text-decoration: none;
@@ -93,4 +102,11 @@ a{
 a:hover{
   cursor: pointer;
   background-size: 100% 2px;
+}
+
+
+hr{
+  border-bottom: 3px solid $c-myBlue;
+  margin-top: 20px;
+  margin-bottom: 64px;
 }
