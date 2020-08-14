@@ -144,6 +144,10 @@ hr{
   border: 1px solid #888;
   width: 80%;
 }
+.modal__head{
+  width: 100%;
+}
+
 .close{
   color: #aaa;
   float: right;
@@ -155,7 +159,10 @@ hr{
   text-decoration: none;
   cursor: pointer;
 }
-
+.modal__flex{
+  display: flex;
+  flex-direction: row;
+}
 /*####################################*/
 /*############## Images ##############*/
 /*####################################*/
