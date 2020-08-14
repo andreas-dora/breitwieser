@@ -1,13 +1,15 @@
 $f-barlow: 'Barlow', sans-serif;
 $f-roboto: 'Roboto', sans-serif;
 $f-main: Helvetica, Arial, sans-serif;
+// $f-head Arial Black, Arial, sans-serif;
 $c-background:#f8f8ff;
 $c-myBlue: #034f67;
+$c-printGray: #9d9d9d;
 
 @mixin upper {
   text-transform: uppercase;
   font-weight: 900;
-  letter-spacing: 0.2em;
+  letter-spacing: 0.1em;
 }
 
 *{
@@ -37,7 +39,7 @@ section{
 }
 
 .widthCon{
-  max-width: 1000px
+  max-width: 960px
 }
 article{
   margin-bottom: 32px;
@@ -47,12 +49,11 @@ article{
 
   .flexCon__aside{
     min-width: 280px;
-    margin-right: 16px;
+    margin-right: 12px;
     text-align: left;
   }
   .flexCon__content{
-    min-width: 320px;
-
+    min-width: 360px;
   }
 }
 
@@ -63,7 +64,6 @@ article{
 h1, h2, h3 {
  font-family: $f-roboto;
   color: $c-myBlue;
-  // font-weight: 900;
 }
 h1{ 
   margin-bottom: 48px;
@@ -71,25 +71,21 @@ h1{
   font-weight: 900;
 }
 
-
 h3{ 
   @include upper();
   margin-bottom: 32px;
 }
 
 h4 { 
-  margin-bottom: 12px;
+  margin-bottom: 8px;
 }
-
-
 
 p{
   line-height: 1.8rem;
-  // margin-bottom: 8px;
 }
-// ul{
-//   list-style: none;
-// }
+dd{
+  line-height: 1.8rem;
+}
 li{
   line-height: 1.8rem;
   margin-left:24px;
@@ -115,8 +111,7 @@ hr{
   margin-bottom: 64px;
 }
 
-.green{
-  
+.green{ 
   color: #04501c;
   @include upper();
   font-weight: 900;
@@ -146,7 +141,6 @@ hr{
     flex-direction: column;
     .flexCon__aside{
       margin-bottom: 8px;
-
     }
     .flexCon__content{
       margin-bottom: 12px;
@@ -154,13 +148,64 @@ hr{
   }
   h4{
     font-size: 1.3rem; 
-    margin-bottom: 6px;}
+    margin-bottom: 6px;
+  }
+  .flexHead{
+    font-weight: bold;
+    font-size: 1.3rem; 
+    margin-bottom: 6px;
+  }
 }
-
-
+/*####################################*/
+/*############### PRINT ##############*/
+/*####################################*/
+@page {
+  margin-left: 3cm;
+  margin-right: 3cm;
+}
 @media print{
   body{
     background-color: #fff;
     color: #000;
   }
+  main{
+    margin: 0 auto;
+  }
+  .flexCon__aside{
+    width: 180pt;
+    margin-right:  8pt;
+  }
+  h1, h2, h3, h4, h5 {
+    color: $c-printGray;
+    page-break-after:avoid;
+  }
+  a{
+    color: $c-printGray;
+  }
+  .a_show:after {
+    content: " (" attr(href) ")";
+  }
+
+  hr{
+    border-bottom: 2pt solid $c-printGray;
+
+  }
+  h1{
+    font-size: 20pt;
+  }
+  h3{
+    font-size: 14pt;
+  }
+  p, a, h4{
+    font-size: 11pt;
+    line-height: 18pt;
+  }
 }
+//   p+p {
+//     text-indent: 3em;
+//     margin-top: -1em;
+// } 
+// a:after {
+//   content: " [" attr(href) "]";
+// }
+//}
