@@ -28,4 +28,11 @@ img{
 
 article{
   max-width: 600px;
+  padding: 0 8px;
+}
+
+footer{
+  margin: 3em 0;
+  text-align: right;
+  padding: 0 16px;
 }
