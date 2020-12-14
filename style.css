@@ -22,11 +22,9 @@ header{
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
-  
 }
 
 nav{
-
   position: fixed;
   top: 0;
   width: 100%;
@@ -55,7 +53,8 @@ nav a button:hover, nav a button:focus{
   z-index: 50;
   height: 100vh;
   padding-top: 16vh;
-  background-color: #e6e1dc;
+  background-color: red;
+  /* background-color: #e6e1dc; */
 
   display: none;
   /* flex-wrap: wrap; */
@@ -66,6 +65,7 @@ nav a button:hover, nav a button:focus{
 .menu-panel a{
   display: block;
   flex: 1;
+  text-decoration: none;
 }
 
 .header-img{
@@ -74,13 +74,9 @@ nav a button:hover, nav a button:focus{
   margin: 24vh auto;
   background-image: url(../../../img/medium/640x853-pexels-vova-krasilnikov-2796145.jpeg);
   background-size: contain;
-
   background-position: 50% 90% ;
   background-repeat: no-repeat;
-  /* background-color: #333; */               
-  /* background-blend-mode: multiply; */
   background-attachment: fixed;
-  /* background-size: cover; */
 }
 .header-bottom{
   position: absolute;
@@ -109,4 +105,8 @@ p{
   line-height: 1.5rem;
   margin-bottom: 16px;
 }
+
+/*###############################################*/
+/*################# Footer ######################*/
+/*###############################################*/
 
