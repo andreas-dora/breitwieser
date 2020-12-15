@@ -1,12 +1,22 @@
 *{
-  /* outline: 1px solid pink; */
+  outline: 1px solid pink;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-/* :root{
-  --var-col-back:#e6e1dc;
-} */
+:root{
+  --c-mainblau: #034f67;
+  --c-hellgrau: #e6e1dc;
+  --c-bikini: #77212e;
+  --c-dunkel: #373434;
+  --c-chili: #9B2335;
+  --c-alarm: #f9423a;
+  --c-superblue: #4244b6;
+  --c-bronze: #a6966c;
+  --c-accent: #a6966c;
+
+
+}
 body{
   font-family: Arial, Helvetica, sans-serif;
   background-color: #e6e1dc;
@@ -20,54 +30,69 @@ header{
 .wrapper{
   max-width: 800px;
   margin: 0 auto;
+}
+.flexBox{
   display: flex;
   justify-content: space-between;
 }
 
 nav{
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   width: 100%;
-  z-index: 100;
+  /* z-index: 100; */
+  background-color: var(--c-accent);
 }
 nav a{
   display: inline-block;
 }
-nav a button{
+nav button, nav a{
   background: transparent;
   font-family: inherit;
   font-size: 1.2rem;
   text-transform: uppercase;
   letter-spacing: 2px;
+  text-decoration: none;
+  color: black;
   border: none;
   outline: none;
-  padding: 8px 8px 32px 8px;
+  padding: 20px 8px
 }
-nav a button:hover, nav a button:focus{
+
+nav button:hover, nav button:focus,
+nav a:hover, nav a:focus{
   color:#77212e;
 }
 .menu-panel{
-  -position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   width: 100%;
   z-index: 50;
-  height: 100vh;
-  padding-top: 16vh;
-  background-color: red;
+  /* height: 100vh; */
+  /* padding-top: 16vh; */
+  /* background-color: red; */
   /* background-color: #e6e1dc; */
 
   display: none;
-  /* flex-wrap: wrap; */
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-}
-.menu-panel a{
-  display: block;
-  flex: 1;
-  text-decoration: none;
+  overflow: hidden;
 }
 
+.menu-panel a{
+  display: block;
+  width: 100%;
+  /* flex: 1; */
+  text-decoration: none;
+  letter-spacing: 4px;
+  text-align: center;
+  color: black;
+  background-color: var(--c-accent);
+  text-transform: uppercase;
+
+}
+/* 
 .header-img{
   max-width: 45vmin; 
   height: 45vmin;
@@ -77,7 +102,7 @@ nav a button:hover, nav a button:focus{
   background-position: 50% 90% ;
   background-repeat: no-repeat;
   background-attachment: fixed;
-}
+} */
 .header-bottom{
   position: absolute;
   display: flex;
@@ -92,11 +117,9 @@ main{
 }
 section{
   padding-top: 6vh;
-
   background-color: white;
 }
 section h1{
-
   font-size: clamp(2rem, 8vw, 5rem);
   margin-bottom: 1em;
 }
@@ -109,4 +132,12 @@ p{
 /*###############################################*/
 /*################# Footer ######################*/
 /*###############################################*/
-
+footer{
+  max-width: 800px;
+  margin: 5vh auto;
+  text-align: right;
+}
+footer a{
+  text-decoration: none;
+  color: gray;
+}

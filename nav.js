@@ -7,7 +7,9 @@ function dropdown(){
   // panel.classList.toggle("active");
   if (panel.style.display == "none") {
     panel.style.display = "flex";
+    menu.innerText = "close";
   } else {
           panel.style.display = "none";
+          menu.innerText = "Menü";
         }
 }
