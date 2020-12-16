@@ -1,15 +1,12 @@
-const menu = document.getElementById("id_menu-btn");
+const overlay = document.getElementById('navOverlay');
+const openBtn = document.getElementById('id_menu-btn');
+openBtn.addEventListener('click', openFun);
+const closeBtn = document.getElementById('id_closeBtn').addEventListener('click', closeFun);
 
-menu.addEventListener("click", dropdown);
+function openFun(){
+  overlay.style.height = "100%";
+}
 
-function dropdown(){
-  const panel = document.getElementById("id-menu-panel");
-  // panel.classList.toggle("active");
-  if (panel.style.display == "none") {
-    panel.style.display = "flex";
-    menu.innerText = "close";
-  } else {
-          panel.style.display = "none";
-          menu.innerText = "Menü";
-        }
+function closeFun(){
+  overlay.style.height = "0%";
 }
