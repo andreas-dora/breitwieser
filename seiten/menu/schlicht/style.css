@@ -92,7 +92,7 @@ nav a:hover, nav a:focus{
   top: 25%; /* 25% from the top */
   width: 100%; 
   text-align: center; 
-  /* margin-top: 30px;  */
+  margin-top: 30px; 
 }
 
 .overlay a {
@@ -106,7 +106,7 @@ nav a:hover, nav a:focus{
   transition: 0.3s; 
 }
 
-/* .overlay .closeBtn {
+.overlay .closeBtn {
   position: absolute;
   background-color: inherit;
   border: none;
@@ -115,7 +115,7 @@ nav a:hover, nav a:focus{
   right: 45px;
   font-size: 60px;
   cursor: pointer;
-} */
+}
 
 .overlay .closeBtn {
   position: absolute;
@@ -124,9 +124,7 @@ nav a:hover, nav a:focus{
   outline: none;
   top: 20px;
   right: 45px;
-  font-size: 50px;
-  font-weight: 300;
-  cursor: pointer;
+  font-size: 60px;
   color: var(--c-second);
   transition: 0.3s; 
 }
