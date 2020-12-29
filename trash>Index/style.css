@@ -75,7 +75,7 @@ nav a:hover, nav a:focus{
 /*##########################################*/
 
 
-.pannelBox {
+.overlay {
   height: 0%;
   width: 100%;
   /* width: 800px; */
@@ -85,44 +85,44 @@ nav a:hover, nav a:focus{
   left: 0;
   top: 0;
   background-color: var(--c-accent);
-  display: flex; 
-  align-items: center;
   overflow-x: hidden; 
   transition: 0.5s; 
 }
 
-.menuPannel {
+.overlay-content {
+    /* margin: 0 auto; */
 
   position: relative;
-  /* top: 10%;  */
-  height: 60%;
-  width: 60%; 
-  margin: 0 auto;
-  /* border: 2px solid white; */
+  top: 25%; /* 25% from the top */
+  width: 100%; 
   text-align: center; 
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  overflow: hidden;
+  /* border: 2px solid white; */
+  /* margin-top: 30px;  */
 }
 
-.pannelBox a {
-  display: block;
-  width: 100%;
+.overlay a {
+  padding: 8px;
   text-decoration: none;
-  letter-spacing: 0.5em;
-  text-align: center;
-  color: #e6e1dc;
-  background-color: var(--c-second);
+  font-size: 20px;
+  color: var(--c-mainblau);
+  display: block; 
   text-transform: uppercase;
-  padding: 2px 0 4px 0;
-  border: 1px solid var(--c-accent);
+  letter-spacing: 0.3em;
   transition: 0.3s; 
 }
 
+/* .overlay .closeBtn {
+  position: absolute;
+  background-color: inherit;
+  border: none;
+  outline: none;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+  cursor: pointer;
+} */
 
-.pannelBox .closeBtn {
+.overlay .closeBtn {
   position: absolute;
   background-color: inherit;
   border: none;
@@ -136,13 +136,13 @@ nav a:hover, nav a:focus{
   transition: 0.3s; 
 }
 
-.pannelBox a:hover, .pannelBox a:focus, .pannelBox .closeBtn:hover  {
+.overlay a:hover, .overlay a:focus, .overlay .closeBtn:hover  {
   color: #f1f1f1;
 }
 
 @media screen and (max-height: 450px) {
-  .pannelBox a {font-size: 20px}
-  .pannelBox .closebtn {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
     font-size: 40px;
     top: 15px;
     right: 35px;
