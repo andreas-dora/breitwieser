@@ -56,7 +56,7 @@ nav{
   background-color: var(--c-accent);
 }
 
-.menu-panel{
+.menuPanel{
   /* position: fixed; */
   /* top: 0; */
   width: 600px;

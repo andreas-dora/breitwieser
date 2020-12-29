@@ -18,8 +18,8 @@
 }
 
 body{
-  /* font-family: Barlow, Arial, sans-serif; */
-  font-family: Arial, sans-serif;
+  font-family: Barlow, Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
   background-color: #e6e1dc;
   min-height: 100vh;
   font-size: 100%;
@@ -78,6 +78,8 @@ nav a:hover, nav a:focus{
 .overlay {
   height: 0%;
   width: 100%;
+  /* width: 800px; */
+  margin: 0 auto;
   position: fixed; 
   z-index: 1; 
   left: 0;
@@ -88,10 +90,13 @@ nav a:hover, nav a:focus{
 }
 
 .overlay-content {
+    /* margin: 0 auto; */
+
   position: relative;
   top: 25%; /* 25% from the top */
   width: 100%; 
   text-align: center; 
+  /* border: 2px solid white; */
   /* margin-top: 30px;  */
 }
 
