@@ -96,7 +96,8 @@ nav a:hover, nav a:focus{
   position: relative;
   /* top: 10%;  */
   height: 60%;
-  width: 60%; 
+  width: 600px;
+  padding: 0 6px;
   margin: 0 auto;
   /* border: 2px solid white; */
   text-align: center; 
@@ -130,15 +131,24 @@ nav a:hover, nav a:focus{
   top: 20px;
   right: 45px;
   font-size: 50px;
-  font-weight: 300;
+  font-weight: 200;
   cursor: pointer;
   color: var(--c-second);
   transition: 0.3s; 
 }
 
-.pannelBox a:hover, .pannelBox a:focus, .pannelBox .closeBtn:hover  {
-  color: #f1f1f1;
-}
+.pannelBox a:hover, .pannelBox a:focus {
+  border: 1px solid var(--c-second);
+  color: white;
+  box-shadow: 0 6px 16px -6px black;
+  -webkit-box-shadow: 0 6px 16px -6px black;}
+
+
+
+  .pannelBox .closeBtn:hover{
+    color: white;
+
+  }
 
 @media screen and (max-height: 450px) {
   .pannelBox a {font-size: 20px}
