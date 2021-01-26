@@ -46,13 +46,21 @@ p, h6{
 img{
   max-width: 100%;
 }
+
+.luna_1{
+  height: 60vh;
+  width: 100%;
+  
+  object-fit:cover;
+  object-position: bottom;
+}
 header{
   min-height: 30vh;
 }
 
 section{
   min-height: 100vh;
-  background-color: rgb(232, 230, 230);
+  /* background-color: rgb(232, 230, 230); */
 }
 .gridContainer{
   max-width: 1300px;
@@ -61,7 +69,7 @@ section{
   grid-auto-rows: min-content;
   grid-template-columns: 0.5fr 1fr minmax(400px, 620px) .5fr;
   gap: .2em;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 
 .sectionHead{
@@ -89,7 +97,7 @@ aside{
 }
 @media (min-width:720px){
   .gridContainer{
-    grid-template-columns: 0.5fr 2fr minmax(400px, 620px) 1fr minmax(200px, 380px) .5fr;
+    grid-template-columns: 0.5fr 2fr minmax(400px, 620px) 1fr minmax(210px, 380px) .5fr;
     /* gap: .2em; */
   }
   

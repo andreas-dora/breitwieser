@@ -1,0 +1,32 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Cairo', Arial, sans-serif;
+  font-size: 100%;
+}
+
+.inhalt{
+  text-align: right;
+  max-width: 500px;
+  padding: 1em;
+
+}
+.inhalt dl{
+  font-size: 1.5em;
+  line-height: 1.5;
+}
+.inhalt dt{
+  font-weight: bold;
+}
+.inhalt dd{
+  border-top: 2px solid black;
+  padding-top: 4px;
+}
+
+a{
+  text-decoration: none;
+}
