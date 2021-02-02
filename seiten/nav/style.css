@@ -93,7 +93,8 @@ nav button, nav a{
 nav button:hover, nav button:focus,
 nav a:hover, nav a:focus{
   /* color:#77212e; */
-  color: white;}
+  color: white;
+}
 
 
 
@@ -159,7 +160,6 @@ nav a:hover, nav a:focus{
 .pannelOpen a{
   opacity: 1;
   transition: .4s; 
-
 }
 
 .pannelBox a:hover, .pannelBox a:focus {

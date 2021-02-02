@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline: 1px solid gray;
 }
 
 :root{
@@ -97,11 +98,7 @@ section{
   justify-content: center;
   border-bottom: 3px solid var(--c-accent);
 }
-/* .content{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-} */
+
 .reverse{
   flex-direction: column-reverse;
 }
@@ -132,11 +129,9 @@ section{
   font-size: 21px;
   line-height: 1.4;
   margin-bottom: .8em;
-
 }
 
 article{
-  /* min-width: 400px; */
   margin: 0 0 0  auto;
   padding: 0 .6em;
 }
